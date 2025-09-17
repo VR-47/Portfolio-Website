@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Me - Vanshika's Portfolio</title>
+    <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+<header>
+    <nav>
+        <img src="logo2.webp" alt="">
+        <div class="right">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="active">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main class="firstSection" style="flex-direction: column; max-width: 450px; margin: 60px auto; padding: 0 20px;">
+    <div class="leftSection" style="width: 100%; font-size: 1.25rem; line-height: 1.7;">
+    <h1>Contact Me</h1>
+    <p>If you would like to get in touch, feel free to send me a message using the form below or reach out via my social media profiles.</p>
+
+    <!-- Replace with your Gmail -->
+    <form action="mailto:vanshikar487@gmail.com?subject=New%20Message%20from%20Portfolio%20Website" 
+            method="POST" enctype="text/plain"
+            style="display:flex; flex-direction: column; margin-top: 25px;">
+        <label for="name" style="margin-top: 15px;">Name</label>
+        <input type="text" id="name" name="Name" placeholder="Your full name" required 
+            style="padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px;"/>
+
+        <label for="email" style="margin-top: 15px;">Email</label>
+        <input type="email" id="email" name="Email" placeholder="Your email" required 
+            style="padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px;"/>
+
+        <label for="message" style="margin-top: 15px;">Message</label>
+        <textarea id="message" name="Message" rows="5" placeholder="Your message here..." required 
+                style="padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+
+        <button type="submit" 
+            style="margin-top: 25px; background-color: darkcyan; color: white; border: none; padding: 14px; border-radius: 5px; cursor: pointer; font-weight: 600;">
+        Send Message
+        </button>
+    </form>
+    </div>
+</main>
+
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(223, 217, 217);
+    color: black;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(211, 208, 208);
+}
+nav img{
+    width: 70px;
+    height: 55px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+    font-size: 1.25rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    transition: 0.2s ease-in;
+}
+
+nav ul li a:hover {
+    color: darkcyan;
+    font-size: 1.05rem;
+}
+
+.left {
+    font-size: 1.75rem;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 90px;
+}
+
+.firstSection > div {
+    width: 30%;
+}
+
+.leftSection {
+    font-size: 2rem;
+}
+
+.purple {
+    color: darkcyan;
+}
+
+.rightSection img {
+    width: 80%;
+}
+
+#element {
+    color: darkcyan;
+}
+
+main hr {
+    border: 0;
+    background-color: gray;
+    height: 1.2px;
+    margin: 40px 104px;
+}
+
+.secondSection {
+    max-width: 80vw;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.secondSection h1 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.text-gray {
+    color: darkcyan;
+}
+/*timeline ko change  kiya hai yha par kyuki muje verical samj nhi aa rha tha*/
+.timeline { 
+    position: relative;
+    margin: 50px auto;
+    padding: 10px 0;
+    width: 80%;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 3px;
+    background: darkcyan;
+    top: 0;
+    bottom: 0;
+    margin-left: -1.5px;
+}
+.logo-circle {
+    width: 60px;             /* adjust size */
+    height: 60px;
+    border-radius: 50%;      /* creates the circle shape */
+    overflow: hidden;        /* keeps image inside circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;       /* optional, can change */
+    border: 2px solid darkcyan; /* optional border */
+}
+
+.logo-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;       /* ensures the image fills the circle */
+}
+
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px;
+}
+/*left side material hai ye*/
+.timeline-item.left {
+    left: 0;
+}
+/*right side material*/
+.timeline-item.right {
+    left: 50%;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    background: darkcyan;
+    border-radius: 50%;
+    border: 3px solid rgb(223, 217, 217);
+}
+
+
+.timeline-item.right::before {
+    left: -10px;
+}
+
+.timeline-item h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.timeline-item p {
+    font-size: 0.9rem;
+    color: gray;
+}
+
+
+footer {
+    background-color:rgb(211, 208, 208);
+    height: 233px;
+    color: black;
+    font-size: 1.1rem;
+}
+.footer{
+    display: flex;
+    margin: 23px 122px ;
+    max-width: 80vw;
+    margin: auto;
+    padding: 40px 0;
+}
+.profile-social {
+    text-align: center;
+    margin: 35px 0;
+}
+
+.profile-social .fa {
+    padding: 17px;
+    font-size: 28px;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background: #222;
+    color: white;
+    display: inline-block;
+    transition: background-color 0.3s;
+    text-align: center;
+    line-height: 16px;
+}
+
+.profile-social .fa-github { background: #333; }
+.profile-social .fa-linkedin { background: #0077b5; }
+.profile-social .fa-instagram { background: #e4405f; }
+.profile-social .fa-facebook { background: #3c65eb; }
+.profile-social .fa-gmail { background: #cf4a2f; }
+.profile-social .fa:hover { opacity: 0.8; }
