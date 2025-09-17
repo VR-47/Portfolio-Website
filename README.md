@@ -24,7 +24,7 @@ This is my personal portfolio website where I showcase my projects, skills, and 
 ---
 
 ## 📂 Project Structure
-
+```plaintext
 portfolio-website/
 ├── home.html # Home page
 ├── about.html # About page
@@ -33,7 +33,7 @@ portfolio-website/
 ├── style2.css # Main CSS file
 ├── /images # All images used in the website
 └── README.md # Project documentation
-
+```
 
 ---
 
